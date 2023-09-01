@@ -1,4 +1,17 @@
 ---
 ---
+$rounded: 8px;
+$dark-color: 38, 38, 38;
+$light-color: #f5f5f5;
+$text-light: rgb(212, 212, 212);
+$border-color: rgb(230, 230, 230);
+$border-color-dark: rgb(50, 50, 50);
+$bg-color-dark: rgb(38, 38, 38);
 
 @import "base";
+@import "blog";
+@import "image";
+@import "navigation";
+@import "card";
+@import "text";
+@import "button";

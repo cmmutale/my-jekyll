@@ -1,0 +1,55 @@
+.project-card {
+    display: flex;
+    gap: 2rem;
+    border: 1px solid $border-color-dark;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: $bg-color-dark;
+    color: white;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.card--badge {
+    max-width: 100px;
+    height: 100%;
+    flex: 30%;
+    aspect-ratio: 1;
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skill {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid $border-color-dark;
+    padding: 1.5rem;
+    background-color: $bg-color-dark;
+    transition: all ease-out 300ms;
+    position: relative;
+    color: white;
+}
+
+.skill span {
+    position: absolute;
+    transform: translateY(-50%);
+    transition: all;
+}
+
+.skill:hover {
+    background: #1e1e1e;
+    color: white;
+}
+
+.skill:hover span {
+    scale: 1.25;
+}

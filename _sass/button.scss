@@ -1,0 +1,19 @@
+.btn-icon {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: fit-content;
+    transition: all 400ms ease-in-out;
+}
+
+.btn-icon span {
+    transition: all ease-in-out 300ms;
+}
+
+.btn-icon--animate-left:hover span {
+    transform: translateX(-100%);
+}
+
+.btn-icon--animate-right:hover span {
+    transform: translateX(100%);
+}

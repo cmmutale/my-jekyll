@@ -1,0 +1,80 @@
+.blog-card {
+    border: 1px solid $border-color-dark;
+    background-color: $bg-color-dark;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.blog-container {
+    margin: 1rem 0;
+}
+
+.blog-card .card-header {
+    transition: all 300ms ease-out;
+}
+
+.blog-card .card-desc>h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-card:hover .card-header {
+    letter-spacing: 1px;
+}
+
+.blog-hero {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(26, 26, 26);
+    z-index: -1;
+    color: white;
+}
+
+.blog-nav {
+    width: 42rem;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.blog-head {
+    color: white;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-head-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+}
+
+.blog-head-image img {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 42rem) {
+    .blog-nav {
+        padding-inline: 1rem;
+    }
+}
